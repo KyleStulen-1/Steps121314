@@ -1,0 +1,10 @@
+<html>
+	<head>
+		<title>Welcome Page</title>
+	</head>
+	<body>
+			<span th:text="'Welcome '"></span>
+			<span th:text="${name} ?: 'CodeWithHeeren'"></span>  <!-- if name will be null then default value will be CodeWithHeeren -->
+			<div th:text="'Your Username: '+${username}"></div>
+	</body>
+</html>

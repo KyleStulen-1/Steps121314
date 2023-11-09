@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<title>Welcome Page</title>
+	</head>
+	<body>
+			<span th:text="'Welcome '"></span>
+			<span th:text="${name} ?: 'To Your Profile Page'"></span>  <!-- if name will be null then default value will be CodeWithHeeren -->
+				<a href="/login">
+					<input type="button" style="float: right;" value="logout"/>
+				</a>	
+			<div th:text="'Your Username: '+${username}"></div>
+	</body>
+</html>
