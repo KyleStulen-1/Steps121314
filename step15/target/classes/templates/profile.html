@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Profile Page</title>
+	</head>
+	<body>
+			<span th:text="'Welcome '+${user.firstname}+' '+${user.lastname}"></span>
+				<a href="/login">
+					<input type="button" style="float: right;" value="logout"/>
+				</a>	
+			<div th:text="'Your firstname: '+${user.firstname}"></div>
+			<div th:text="'Your lastname: '+${user.lastname}"></div>
+			<div th:text="'Your username: '+${user.username}"></div>
+	</body>
+</html>
